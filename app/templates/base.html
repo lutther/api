@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>luther</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Title</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header>
-		Luther
-		<a href="/">Home</a>
-		<a href="/register">Register</a>
+		<div class="burger">
+			<div class="item1"></div>
+			<div class="item2"></div>
+			<div class="item3"></div>
+		</div>
+		<div class="logo">
+			<h3><<span>_lu</span>th></h3>
+		</div>
+		<nav class="nav">
+			<ul class="nav_list">
+				<li class="nav_item"><a href="#home">Home</a></li>
+				<li class="nav_item"><a href="#proects">Projects</a></li>
+				<li class="nav_item"><a href="#about">About</a></li>
+				<li class="nav_btn nav_item">
+				<a href="mailto:lthrncube@gmail.com">
+					<button>Contact</button>
+				</a>
+				</li>
+			</ul>
+		</nav>
+		<a class="cta" href="#"><button class="btn">Contact</button></a>
 	</header>
 	<hr>
+
+
 	{% block content %} {% endblock %}
+
+	<footer>
+		<a href="mailto:lthrncube@gmail.com">lthrncube@gmail.com</a>
+		<ul class="social">
+			<li class="social_item"><a class="social_link" href="https://www.facebook.com/lthrncube">facebook</a></li>
+			<li class="social_item"><a class="social_link" href="https://twitter.com/lutherncube">instagram</a></li>
+			<li class="social_item"><a class="social_link" href="https://www.instagram.com/_luth/">twitter</a></li>
+		</ul>
+	</footer>
+	<script src="{{ url_for('static', filename='base.js') }}"></script>
 </body>
 </html>

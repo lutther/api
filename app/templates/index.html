@@ -2,9 +2,59 @@
 
 {% block content %}
 
-{% for i in show %}
-<p>{{i.name}}</p>
-<p>{{i.surname}}</p>
-{% endfor %}
+<!-- Introduction -->
+<section class="intro" id="home">
+  <h1 class="section_title section_title-intro">
+    Hi, I am Luther
+  </h1>
+  <p class="section_subtitle section_subtitle-intro">web dev</p>
+  <img class="intro_img" src="static/IMG.jpg" alt="my pic">
+</section>
+
+
+<!-- My projects -->
+<section class="my_projects" id="proects">
+  <h2 class="section_title section_title-project">What I do</h2>
+  <div class="projects">
+    <div class="project">
+      <h3>Web development</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ullam facilis soluta
+         obcaecati magnam voluptatibus omnis tenetur deserunt dolorum corrupti quas totam 
+         nostrum repellendus illo excepturi voluptates explicabo, consequuntur veritatis?
+        </p>
+    </div>
+
+    <div class="project">
+      <h3>Android app development</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ullam facilis soluta
+         obcaecati magnam voluptatibus omnis tenetur deserunt dolorum corrupti quas totam 
+         nostrum repellendus illo excepturi voluptates explicabo, consequuntur veritatis?
+      </p>
+    </div>
+    
+    <div class="project">
+      <h3>Python programming</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ullam facilis soluta
+         obcaecati magnam voluptatibus omnis tenetur deserunt dolorum corrupti quas totam 
+         nostrum repellendus illo excepturi voluptates explicabo, consequuntur veritatis?
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- About me -->
+<section class="about-me" id="about">
+  <h2 class="section_title section_title-about">About me</h2>
+  <p class="section_subtitle section_subtitle-about">Subtitle</p>
+  <div class="about-me_body">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ullam facilis soluta
+      obcaecati magnam voluptatibus omnis tenetur deserunt dolorum corrupti quas totam 
+      nostrum repellendus illo excepturi voluptates explicabo, consequuntur veritatis?</p>
+  </div>
+  <img class="me" src="static/IMG.jpg" alt="my pic">
+</section>
 
 {% endblock %}
