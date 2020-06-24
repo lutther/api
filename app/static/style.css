@@ -1,5 +1,5 @@
 :root {
-    --ff-primary: 'Montserrat', sans-serif;
+    --ff-primary: 'Source Code Pro', monospace;
 
     --clr-primary: #24252A;
     --clr-secondary: rgba(0,136,169, 1);
@@ -130,6 +130,10 @@ li, a, button {
         background: var(--clr-primary);
     }
 
+    .section_subtitle {
+        color: var(--clr-light);
+    }
+
     .cta {
         display: none;
     }
@@ -186,6 +190,11 @@ li, a, button {
     .logo {
         display: none;
     }
+
+    .my_projects
+    .about-me {
+        font-weight: bolder;
+    }
 }
 
 @media (min-width:600px) {
@@ -198,10 +207,7 @@ li, a, button {
         padding: 15px 10%;
     }
 
-    .nav_btn {
-        display: none;
-    }
-
+    
     .nav_item {
         display: inline-block;
         padding: 10px;

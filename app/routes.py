@@ -6,8 +6,7 @@ from app.forms import RegForm, ReqLeave
 @app.route('/')
 @app.route('/index')
 def index():
-	show = User.query.all()
-	return render_template('index.html', show=show)
+	return render_template('index.html')
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
